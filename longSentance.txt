@@ -1,0 +1,38 @@
+if operator == '+':
+result = int(firstOp + secondOp)
+elif operator == '-':
+result = int(firstOp - secondOp)
+elif operator == '*':
+result = int(firstOp * secondOp)
+elif operator == '/':
+result = firstOp / secondOp
+else :
+print("연산자의 입력이 잘못 되었습니다.")
+if operator == '/':
+print("연산 결과는 %.2f"%result,"입니다.")
+else :
+print("연산 결과는",result,"입니다.")
+def fib(n):
+a, b = 0, 1
+while b < n:
+print(b, end=' ')
+a, b = b, a+b 
+print()
+def fib2(n):
+result = []
+while b < n:
+result.append(b)
+a, b = b,a+b 
+return result
+myTuple=(10,20,30)
+myList=list(myTuple)
+myList.append(40)
+myTuple=tuple(myList)
+myTuple
+numbers=[x for x in range(100) if x%2==0 and x%3==0]
+print(numbers)
+numbers=[]
+for x in range(100):
+if x%2==0and x%3==0:
+numbers.append(x)
+print(numbers)
